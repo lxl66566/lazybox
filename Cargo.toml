@@ -1,0 +1,30 @@
+[package]
+authors     = ["lxl66566 <lxl66566@gmail.com>"]
+categories  = ["command-line-utilities", "development-tools"]
+description = "A cross-platform toolbox contains some useful commands"
+edition     = "2021"
+homepage    = "https://github.com/lxl66566/lazybox"
+keywords    = ["cli", "tool"]
+license     = "MIT"
+name        = "lazybox"
+readme      = "./README.md"
+repository  = "https://github.com/lxl66566/lazybox"
+version     = "0.1.0"
+
+[dependencies]
+anyhow     = "1.0.82"
+clap       = "4.5.11"
+die-exit   = { version = "0.5.0", features = ["red"] }
+env_logger = "0.11.0"
+glob       = "0.3.1"
+log        = "0.4"
+tokio      = { version = "1.38.1", features = ["macros", "rt", "rt-multi-thread", "fs"] }
+
+[dev-dependencies]
+temp_testdir = "0.2.3"
+
+[profile.release]
+lto       = true
+opt-level = "z"
+panic     = "abort"
+strip     = true
