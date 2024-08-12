@@ -1,5 +1,6 @@
 use clap::Command;
 mod test;
+mod to_utf8;
 
 pub fn functions(cmd: Command) -> Command {
     cmd.subcommand(test::command())
