@@ -20,7 +20,7 @@ encoding_rs = "0.8.34"
 env_logger  = "0.11.0"
 glob        = "0.3.1"
 log         = "0.4"
-tokio       = { version = "1.38.1", features = ["macros", "rt", "rt-multi-thread", "fs"] }
+tokio       = { version = "1.39.3", features = ["macros", "rt", "rt-multi-thread", "fs"] }
 uchardet    = "2.0.4"
 
 [dev-dependencies]
