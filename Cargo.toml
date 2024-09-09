@@ -12,7 +12,7 @@ repository  = "https://github.com/lxl66566/lazybox"
 version     = "0.1.0"
 
 [dependencies]
-anyhow      = "1.0.82"
+anyhow      = "1.0.87"
 assert2     = "0.3.14"
 clap        = "4.5.17"
 die-exit    = { version = "0.5.0", features = ["red"] }
