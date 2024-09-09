@@ -14,7 +14,7 @@ version     = "0.1.0"
 [dependencies]
 anyhow      = "1.0.82"
 assert2     = "0.3.14"
-clap        = "4.5.16"
+clap        = "4.5.17"
 die-exit    = { version = "0.5.0", features = ["red"] }
 encoding_rs = "0.8.34"
 env_logger  = "0.11.0"
