@@ -18,13 +18,12 @@ pub fn execute(args: &ArgMatches) {
 }
 
 mod test {
-    use std::error::Error;
-
     use uchardet::detect_encoding_name;
 
     use super::*;
+
     #[test]
-    fn test_detect_encoding_name() -> Result<(), Box<dyn Error>> {
+    fn test_detect_encoding_name() -> anyhow::Result<()> {
         assert_eq!(
             "UTF-8",
             detect_encoding_name("©français".as_bytes()).unwrap()

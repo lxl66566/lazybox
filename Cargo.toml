@@ -7,7 +7,7 @@ homepage    = "https://github.com/lxl66566/lazybox"
 keywords    = ["cli", "tool"]
 license     = "MIT"
 name        = "lazybox"
-readme      = "./README.md"
+readme      = "README.md"
 repository  = "https://github.com/lxl66566/lazybox"
 version     = "0.1.0"
 
@@ -25,6 +25,10 @@ uchardet    = "2.0.4"
 
 [dev-dependencies]
 temp_testdir = "0.2.3"
+
+[[bin]]
+name = "lb"
+path = "src/main.rs"
 
 [profile.release]
 lto       = true
