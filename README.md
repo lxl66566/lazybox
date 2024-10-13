@@ -1,3 +1,5 @@
 # lazybox
 
-WIP
+~~WIP~~
+
+currently discontinued.
